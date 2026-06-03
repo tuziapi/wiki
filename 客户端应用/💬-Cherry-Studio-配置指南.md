@@ -1,0 +1,47 @@
+# 💬 Cherry Studio 配置指南
+
+## Cherry-Studio下载地址
+
+<https://www.cherry-ai.com/>
+
+我也有兔子改版优化的 cherry，您可以看这里下载使用[📖 兔子桌面版 项目介绍](/doc/1002708a-bd82-41cd-aa82-6b39c9fe96d2)，会更简单上手
+
+## 常规兔子API配置
+
+第一步：点右上角小齿轮
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC8wNDgxNDYwYy0xYzM1LTQ0ZTYtYjQ4Ny1kZTRjOGUzNmE1MWIvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.oPUhYw0dWgARjeZu_qx6TW9HvdFRP_XRspCjIMLPPKU " =960x600")
+
+第二步：点【模型服务】
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC82NzE1OTNkYS02MGI2LTQ4MTMtYjYwZS1iNzU3OWI3YjIzNTIvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.eWh7FbBp044QCL1XU3JzS2uo9Lb58Ov3BevGbSX9Ij8 " =960x600")
+
+第三步：点【添加】  
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC80NmM1NWUxNy1kYjNhLTQzZTYtYWUwNC1kMTEzYTg4NDZhZDMvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.XFtI_p_8aP0SLUeMibOo2OJOb0EGwRtuZzBUWcjpnBc " =960x600")
+
+第四步：提供商填写"兔子API"（可以任意填写），提供商类型填写"OpenAI"
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC8zY2MwNGRiNS04OTJlLTQwZDQtYTM3MC00ZTY5MDIzZjEwMjAvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.7oo3LI5SqqxTRWUCmQIbiBLALvSdyEuy1hTERPH2kfI " =960x600")  
+
+第五步：点【添加模型】  
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC9kM2UwZTcwOS1lZTQ4LTRjYmUtYWY4MS00ODAyNDRkODUxNjIvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.HhUIijqPeFpZ8_m2fJ2Rsn0MO-Yw8XjQUO5ybwEIMJo " =960x600")
+
+第六步：模型id写"gpt-4o"（如果有其他想用的模型，可参考[模型列表 ](https://api.tu-zi.com/pricing)）
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC8yODMwNjU4Yy0xYjVlLTRkMWMtOTI1MS04OTEwZmFjYjM4M2UvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.-0t36XKVZkFQ5NlHzqx1VmsUTvy9EeUaR6Qw_olPehY " =960x600")
+
+第七步：填写API密钥和API地址（[api.tu-zi.com](https://api.tu-zi.com/)）
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC85YTNjM2YwZS0wNWM1LTQ1ZWMtODIwYS1kYTA4NDI2ZWVlZDQvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NjIsImV4cCI6MTc4MDQ1ODQ2Mn0.8jpImewCWi-EOOxOtd52wIgoOP4O_OBvGq9jUH6zjPc " =960x600")
+
+* API-KEY获取步骤，可参考[🚀 API站点快速入门](/doc/aefd223d-a36f-423d-b9f6-a7cf4a31a2c6)
+* 访问官方API平台：[api.tu-zi.com](https://api.tu-zi.com/) - 登录后进入密钥管理面板创建API-KEY - 在钱包内完成充值（新用户有0.4美金赠送）
+
+## new-api服务商接入（已 gpt-4o-image-vip）
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzLzA0MTA4NzY3LTk1YjgtNDYzMi05YWFmLTgwNzgwZjIwMmFkMi9kOWNiZmFmOS1hMWY2LTQ3MTctYWM4NS1kNDkwNWM1ODBlYzMv5LyB5Lia5b6u5L-h5oiq5Zu-X2VhZGU2ZGNlLWQ4NTItNDZmNS1iNWUwLWJkYTNhMDA4YWYyZi5wbmciLCJ0eXBlIjoiYXR0YWNobWVudCIsImlhdCI6MTc4MDQ1NDg2MiwiZXhwIjoxNzgwNDU4NDYyfQ.eg11LOiAZgB5U60SIRH39UVaBbgDAoTQ2p6fT94GL2U " =1182x778")
+
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzLzA0MTA4NzY3LTk1YjgtNDYzMi05YWFmLTgwNzgwZjIwMmFkMi9kZWE1YzAyNi00YTEyLTQ2NWUtOTE2NC1iYzlmNDk4MzE0Yzkv5LyB5Lia5b6u5L-h5oiq5Zu-XzZkYTI5NThjLTNjMjctNGNmNy05NWMzLTFlYjY5MTkwZTc2Ni5wbmciLCJ0eXBlIjoiYXR0YWNobWVudCIsImlhdCI6MTc4MDQ1NDg2MiwiZXhwIjoxNzgwNDU4NDYyfQ.J3h1skFSSQkkqq21cngHkWG4pybQ4T9YHtYo494QDys " =1191x753") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzLzA0MTA4NzY3LTk1YjgtNDYzMi05YWFmLTgwNzgwZjIwMmFkMi8wMzY2ZjM5Ny01OTQ1LTRlZDItYmRiZi0wOTIwZjQ4MWRjNWUv5LyB5Lia5b6u5L-h5oiq5Zu-X2VjNDQ3MjY5LWViOWItNGNlOS1iZjY3LTU1ZTA5ZGI4YWY1OC5wbmciLCJ0eXBlIjoiYXR0YWNobWVudCIsImlhdCI6MTc4MDQ1NDg2MiwiZXhwIjoxNzgwNDU4NDYyfQ._9QPrUunMvV5pTUf0Ce_BOghzxQQTU-oXTh99TfKDk8 " =1267x882") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzLzA0MTA4NzY3LTk1YjgtNDYzMi05YWFmLTgwNzgwZjIwMmFkMi9kMzY2MDBjMS0wNTE1LTQzNWQtYjQzZi0xYjg4MzU3N2YyYmEv5LyB5Lia5b6u5L-h5oiq5Zu-XzNlOTY4N2RhLTc5NWQtNDJjMi1hYzJhLThjMDM3NWI4MjIwOS5wbmciLCJ0eXBlIjoiYXR0YWNobWVudCIsImlhdCI6MTc4MDQ1NDg2MiwiZXhwIjoxNzgwNDU4NDYyfQ.kYL36sxSeOH9V-0JkuDD6oQS1c1JF9I9sbpcBh7eerc " =1293x863")

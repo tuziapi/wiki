@@ -1,0 +1,26 @@
+# PLUS 会员使用次数
+
+```javascript
+      GPT-5-T-MINI: "30/3h"
+      GPT-5-INSTANT: "40/3h"
+      GPT-5-PRO: "1/168h"
+      GPT-5: "40/3h"
+      GPT-5-THINKING: "20/3h"
+      GPT-4O-MINI: "40/3h"
+      GPT-4O: "40/3h"
+      GPT-4: "20/3h"
+      GPT-4O-CANMORE: "30/3h"
+      GPT-4-5: "5/24h"
+      O1: "10/24h"
+      O1-PRO: "1/12h"
+      O1-MINI: "30/24h"
+      O3: "30/24h"
+      O3-PRO: "2/24h"
+      GPT-4-1-MINI: "40/3h"
+      GPT-4-1: "40/3h"
+      O3-MINI: "30/24h"
+      O3-MINI-HIGH: "30/24h"
+      O4-MINI-HIGH: "30/24h"
+      O4-MINI: "150/24h"
+      DEEP-RESEARCH:"10/24h"
+```

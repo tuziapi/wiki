@@ -1,0 +1,92 @@
+# 兔子无限画布-AiTu
+
+## 一、功能演示
+
+### 功能一：智能图片组合生成
+
+nano banana的一个杀手级功能是将多个人物图片与手绘姿势结合，生成符合创意需求的合成图片，并且生成的图片和输入图片有非常好的一致性。
+
+**步骤**:
+
+
+1. 快速选择画板上的多个图片元素，显示AI 图片生成按钮，点击，自动填充到表单
+2. 将画板中图文以外的所有元素（手绘线条、形状等）导出为图片，作为参考素材
+3. 在弹窗上点生成按钮，调用tu-zi提供的API接口生成图片
+4. 点击插入，把生成的图片插入到所有选中元素底部+50px像素的位置并垂直居中对齐
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy8wOGNkZTMyYi1kNDNlLTRlN2ItOGQwOC05NzM0YjZhYjNiNTAvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.4-1qqoAox__Jc1_x2ELZnc1rS0GOkm7XrLN60ugCXaE " =2964x1208") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy8zOWRjOGUxNS04Njk1LTRkNzctYWYwOS05NzI5MmJmMzcxYzMvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.W3W4Vk61gXOmy3CCMsOMmJdHTaj0yogvGovze89JVbc " =2988x1704") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy82MDE5NzIyZC05MTEwLTQzNDgtYTBmMC1jYmU2MWQ3OTAzOTMvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.Ci6iQt0-Q_T-DKkL2XuqasEhQjDh3FKWIBxyGoldexM " =2984x1592")
+
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy85ODI3N2UyYS1lNWQ3LTRjYTgtYjliZC0yNDc3YWU1OTFiYTMvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.GWswomVDmOldKGs6ggdkWiqlXgJ0QanZrW5unObBre8 " =2172x1476")
+
+
+**疯狂动物城合影示例：**
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy85M2U1MmM5YS0xZmI2LTQ0MjMtYjBiNC02ZTVmMjJiOTExZTgvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.y1ubWlejUuuzg9oFINlndo3qSQRoomh0BL8gVbUi4yA " =2478x1538")
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy80YWNkMTY1Zi02ZDYzLTRlYjctODc3OC1mOTMyZTQzNDdmYWYvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.1IdvzwVNEU-BbZZvv2VR_Ff4gQ0MK4iyBzfh9exanwg " =2450x1498")
+
+### 功能二：图片生成视频
+
+veo3最让我惊艳的点是，音画同步，可以生成声音和口型一致，并且符合物理逻辑。 
+
+**步骤**: 
+
+1\.选中图片，显示AI 视频生成按钮，点击，打开AI 视频生成弹窗，并自动填充到表单 
+
+2\. 如果选中的图片上有图文之外的元素，则与图片一起合成一张图片填入表单 
+
+3\. 在弹窗上点生成按钮，调用tu-zi提供的API接口生成视频 
+
+4\. 点击插入，把生成的视频插入到所有选中元素底部+50px像素的位置并垂直居中对齐
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy8zZTM1MDg2ZS1mNDIwLTQ5ZWItOTdkZi0zZDc5OTJlYzY5YzYvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.uIOujz74-tOXmB8QKYu3dwf_rQytpURod33IIn45RIs " =1662x1072") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy83MmViZTRhNy1jN2M2LTRhOWYtYTUxNi00NDlhYTNhYzQ1NzQvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.MYzk29WT-Nox1oRTM8kz35uWxO_2AEqE_QaZ3Zs3F4Y " =2178x1622")
+
+
+### 功能三：选择视频帧
+
+veo3只能生成8秒的视频，如果要生成连续的长视频，比较好的方式可能是取最后一帧图片，接着生成下一个视频。 **步骤**: 
+
+1\.选中视频，显示视频帧选择按钮，点击，打开视频帧选择弹窗。 
+
+2\.默认选择最后一帧图片显示在弹窗上方，下面可以拖动进度或者输入进准定位到对应时间的帧 
+
+3\. 点击插入，把视频帧插入到视频元素底部+50px像素的位置并垂直居中对齐
+
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy8yNjdhYmUzYy1mOWVlLTRhMTQtOTZhNi01Mjk0Yjc0NTQ4YzUvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.DXk5e_sjHGJ1fPpm3oBYD8aSuy_Smy2PvO6yQe53h9E " =2880x1616") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy80MTljOGI0ZC04NzkzLTRlMTQtODJhZC1kMTI4YTMzM2YzYTYvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.a7jeVsAbHi8TxB0K6WDibcQ5EIkarf1_dp-4ZHlHxGA " =1646x1636")
+
+
+## 二、兔子key使用指南
+
+#### 1. 访问 [api.tu-zi.com](http://api.tu-zi.com) 注册账户后，您可以访问钱包查看余额并进行余额充值
+
+
+ ![mi.png](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy8xZjFiMWI2NC1mYmY4LTQ1OGUtYTQzYi0zNGRlM2E3OTk5NWQvbWkucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.LWbN89FT-jxVcOomqOdAJSuxJqczKU-4HuxNEyOLmn4 " =656x445")
+
+
+#### 2. 点击令牌，生成你的令牌为后续调用大模型使用；令牌即常说的API-KEY
+
+
+ ![def_key.png](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy9kOTUzYmMzYi1jNDM5LTQxZTctYjI0My04YzkzNGIyMDA5ZGEvZGVmX2tleS5wbmciLCJ0eXBlIjoiYXR0YWNobWVudCIsImlhdCI6MTc4MDQ1NDg1OSwiZXhwIjoxNzgwNDU4NDU5fQ.fu8Mm-xRyIlTT-MGhuQlzxmoqizyF5da6oYGCrcuqMg " =718x451") ![sub.png](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy83ZjQ4MWYzMS1kNDM4LTRmMzgtYjAwMi1iOTM2Mjg0ODdlNzIvc3ViLnBuZyIsInR5cGUiOiJhdHRhY2htZW50IiwiaWF0IjoxNzgwNDU0ODU5LCJleHAiOjE3ODA0NTg0NTl9.cMRvFvnpNsyQe0JFpqXTP3L7FfWPmZn1G1mTrh3h4FE " =583.5x448.5") ![key.png](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy9kMWJkM2M3OC1jM2QxLTQwYTUtODU1My0yMWQzMDYxNWZkMjkva2V5LnBuZyIsInR5cGUiOiJhdHRhY2htZW50IiwiaWF0IjoxNzgwNDU0ODU5LCJleHAiOjE3ODA0NTg0NTl9.00yb1N6Y2wZ2EcWNnEjgD17lh2aMN9ENck-lagOn4kA " =791x442")
+
+
+#### 3. 打开聊天/绘画列表
+
+
+ ![aitool.png](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy8zODM5NzMzNi1iYzViLTRhYTEtOWI4Yy0xYzZjMTU1YzFhZjgvYWl0b29sLnBuZyIsInR5cGUiOiJhdHRhY2htZW50IiwiaWF0IjoxNzgwNDU0ODU5LCJleHAiOjE3ODA0NTg0NTl9.osHIItoieEc0UIuuoZKPWV4Eh617S43Q5KyPgjfMmrE " =584x219")
+
+
+#### 4. 配置秘钥key
+
+
+ ![is_key.png](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2Y0NWI0MTA2LTNmN2EtNDgzMy1iODA0LTkzMDI0NjM4NmRjMy9iM2ViMDRhOC1iMWIwLTQ5YzAtOTU4My0zZjM0Y2NjZDc5MDMvaXNfa2V5LnBuZyIsInR5cGUiOiJhdHRhY2htZW50IiwiaWF0IjoxNzgwNDU0ODU5LCJleHAiOjE3ODA0NTg0NTl9.10MxA34Q7H9-o6KLxaHtHdkneY3OM_2LK9zim6qrpLQ " =709x351.5")
+
+
+#### 5. 配置模型
+
+
+ ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC9mMzJlZGE1MC1mMGU2LTRiYWQtOGU0Yy01NDAxOGE5MWY4YTkvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.oPsx19_2uP7xPUlIYt9GKIvCofW_yKvhUAuR71n46ek " =300x299") ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2UxMjc0Y2E3LWNmZTEtNDdlOC04MjA0LTNhMDkzMTNlNzM4ZC82YTZhYzZlZC0xMTgxLTQ2MWUtODRkYi1mNmUyYzcwMGM0ZjcvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ4NTksImV4cCI6MTc4MDQ1ODQ1OX0.SY3O082z18va4Dhu1xMurMHVZxtqGeeWEiz6z89UBjI " =342x301")
+
+
+\
