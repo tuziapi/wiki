@@ -1,8 +1,6 @@
-# Codex 官方版本配置教程（gac 版）
+# Codex 官方版本配置教程（gaccode）
 
-### 官方 Codex 客户端 +  API
-
-适合希望使用官方 Codex 客户端的同学，通过配置自定义模型提供商对接 gaccode/兔子 API。
+### 官方 Codex 客户端 +  gac API
 
 ```bash
 #官方客户端安装
@@ -15,22 +13,20 @@ codex --version
 
 #### B.1 配置 `~/.codex/config.toml`
 
-新增 `gac/兔子` 配置并将默认 `profile` 指向它：
+新增 `gac` 配置并将默认 `model_provider` 指向它：
 
 ```toml
-profile = "gac"
+disable_response_storage = true
+model_provider = "gac"
+model = "gpt-5.5"
+model_reasoning_effort = "high"
 
 [model_providers.gac]
 name = "gac"
 base_url = "https://gaccode.com/codex/v1"
+env_key = "GAC_CODEX_API_KEY"
 wire_api = "responses"
-env_key = "CODEX_API_KEY"
-
-[profiles.gac]
-model_provider = "gac"
-model = "gpt-5.5"
-model_reasoning_effort = "medium"
-approval_policy = "on-request"
+requires_openai_auth = true
 ```
 
 #### B.2 设置环境变量
@@ -52,9 +48,9 @@ export CODEX_API_KEY="你的Key字符串"
 codex
 ```
 
-> **提示：** 如你在 `config.toml` 中未将 `profile` 设为 `gac`，也可通过命令行切换：`codex --profile gac`。
+> **提示：** 如你在 `config.toml` 中未将 `model_provider` 设为 `gac`，也可通过命令行切换：`codex --model_provider gac`。
 
-> **说明：** 采用官方 Codex + API Key 方式通常无需浏览器授权，直接使用即可。
+> **说明：** 采用官方 Codex + gac API Key 方式通常无需浏览器授权，直接使用即可。
 
 
 ---
@@ -67,4 +63,4 @@ codex
 * **找不到命令：** 重启终端或检查 PATH 环境变量
 * **连接问题：** 检查防火墙、代理或网络设置
 
-> 💡 **使用说明：** 无论使用方案A或方案B，Codex 都会使用你的 gaccode 账户积分，且与 Claude Code 共享扣费额度。
+> 💡 **使用说明：** 无论使用 codex gac改版 还是 原版 ，Codex 都会使用你的 gaccode 账户积分，且与 Claude Code 共享扣费额度。

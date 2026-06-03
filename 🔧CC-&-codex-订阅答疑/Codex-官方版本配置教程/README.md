@@ -2,7 +2,7 @@
 
 ### 官方 Codex 客户端 +  API
 
-适合希望使用官方 Codex 客户端的同学，通过配置自定义模型提供商对接 gaccode/兔子 API。
+适合希望使用官方 Codex 客户端的同学，通过配置自定义模型提供商对接  API。
 
 ```bash
 #官方客户端安装
@@ -15,36 +15,29 @@ codex --version
 
 #### B.1 配置 `~/.codex/config.toml`
 
-新增 `gac/兔子` 配置并将默认 `profile` 指向它：
+新增 `tuzi/codex/gac` 配置并将默认 `model_providers` 指向它：
 
 ```toml
 
-profile = "gac"
-#profile = "tuzi"
-#profile = "codex"
-
-
-[model_providers.gac]
-#[model_providers.tuzi]
-#[model_providers.codex]
-name = "gac"
-#name = "tuzi"
-#name = "codex"
-base_url = "https://gaccode.com/codex/v1"
-#base_url = "https://api.tu-zi.com"
-#base_url = "https://api.tu-zi.com/coding"
-wire_api = "responses"
-env_key = "CODEX_API_KEY"
-
-[profiles.gac]
-#[profiles.tuzi]
-#[profiles.codex]
-model_provider = "gac"
-#name = "tuzi"
-#name = "codex"
+disable_response_storage = true
+model_provider = "tuzi"
+#model_provider = "codex"
+#model_provider = "gac"
 model = "gpt-5.5"
-model_reasoning_effort = "medium"
-approval_policy = "on-request"
+model_reasoning_effort = "high"
+
+[model_providers.tuzi]
+#[model_providers.codex]
+#[model_providers.gac]
+name = "tuzi"
+base_url = "https://api.tu-zi.com/v1"
+#base_url = "https://api.tu-zi.com/coding"
+#base_url = "https://gaccode.com/codex/v1"
+env_key = "TUZI_CODEX_API_KEY"
+#env_key = "CODING_CODEX_API_KEY"
+#env_key = "GAC_CODEX_API_KEY"
+wire_api = "responses"
+requires_openai_auth = true
 ```
 
 #### B.2 设置环境变量
@@ -53,9 +46,9 @@ approval_policy = "on-request"
 
 ```bash
 # 到此页面获取 API Key
-# https://gaccode.com/api-keys
 # https://api.tu-zi.com/token
 # https://store.tu-zi.com
+# https://gaccode.com/api-keys
 
 export CODEX_API_KEY="你的Key字符串"
 ```
@@ -68,7 +61,7 @@ export CODEX_API_KEY="你的Key字符串"
 codex
 ```
 
-> **提示：** 如你在 `config.toml` 中未将 `profile` 设为 `gac`，也可通过命令行切换：`codex --profile gac`。
+> **提示：** 如你在 `config.toml` 中未将 `model_providers` 设为 `tuzi/codex/gac`，也可通过命令行切换：`codex --model_providers tuzi/codex/gac`。
 
 > **说明：** 采用官方 Codex + API Key 方式通常无需浏览器授权，直接使用即可。
 
