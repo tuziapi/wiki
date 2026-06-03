@@ -301,23 +301,21 @@ codex --version
 
 #### B.1 配置 `~/.codex/config.toml`
 
-新增 `gac` 配置并将默认 `profile` 指向它：
+新增 `gac` 配置并将默认 `model_providers` 指向它：
 
 ```toml
 
-profile = "gac"
+disable_response_storage = true
+model_provider = "gac"
+model = "gpt-5.5"
+model_reasoning_effort = "high"
 
 [model_providers.gac]
 name = "gac"
 base_url = "https://gaccode.com/codex/v1"
+env_key = "GAC_CODEX_API_KEY"
 wire_api = "responses"
-env_key = "CODEX_API_KEY"
-
-[profiles.gac]
-model_provider = "gac"
-model = "gpt-5.5"
-model_reasoning_effort = "medium"
-approval_policy = "on-request"
+requires_openai_auth = true
 ```
 
 #### B.2 设置环境变量
@@ -328,7 +326,7 @@ approval_policy = "on-request"
 # 到此页面获取 API Key
 # https://gaccode.com/api-keys
 
-export CODEX_API_KEY="你的Key字符串"
+export GAC_CODEX_API_KEY="你的Key字符串"
 ```
 
 #### B.3 启动官方 Codex
@@ -492,9 +490,9 @@ npm install -g https://gaccode.com/gemini/install
 
 > 📞 **需要帮忙的可以联系客服**
 >
->  ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzL2I3MTgwNDFlLWUwNjItNDRlMy1iNTljLTlkYzliNjNjODczMi80MDBiZDM5My1lYzQ2LTRmY2ItYmQ5Yi1jODA1YjI0OTE2YjcvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ5NTIsImV4cCI6MTc4MDQ1ODU1Mn0.fHwst6jkjl8TYZm4V7YbcZzSRTPSvV4_c48_El1My6o "left-50 =173x170")
+> ![二维码](https://nav.ourzhishi.top/api/dynamic-image/qr-code)
 >
-> \
+> /
 
 
 
@@ -513,7 +511,7 @@ npm install -g https://gaccode.com/gemini/install
 | ✓ 多成员更划算        | ✓ 高性价比选择            | ✓ 高性价比选择         |
 | ✓ 稳定性尽力保证       | ✓ 稳定性尽力保证           | ✓ 稳定性尽力保证        |
 
-| 💎 MAX.独享 - ¥1699/月 | 👥 MAX·双人 - ¥899/月/人 | 🌟 月卡Pro - ¥699/月/人 |
+| 💎 MAX.独享 - ¥1699/月 | ✨MAX - ¥899/月 | 🌟 月卡Pro - ¥699/月 |
 |---------------------|----------------------|---------------------|
 | **适合重度用户**          | **适合团队协作**           | **适合小团队**           |
 | ✓ 初始积分：30000        | ✓ 初始积分：15000         | ✓ 初始积分：12000        |
@@ -587,19 +585,19 @@ npm install -g https://gaccode.com/gemini/install
 
 ## 5. 升级
 
-**升级 Claude Code**
+**升级 改版 Claude Code**
 
 ```bash
 npm install -g https://gaccode.com/claudecode/install --registry=https://registry.npmmirror.com
 ```
 
-**升级 Codex**
+**升级 改版 Codex**
 
 ```bash
 npm install -g https://gaccode.com/codex/install
 ```
 
-**升级 Gemini CLI**
+**升级 改版 Gemini CLI**
 
 ```javascript
 npm install -g https://gaccode.com/gemini/install
