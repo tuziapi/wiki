@@ -1,5 +1,7 @@
 # 🔧 用 cc-switch 配置 tuzi 第三方模型（Claude Code + Codex）
 
+> 尚未安装 CC Switch？先看 [CC Switch 下载与安装](🔧-CC-Switch-下载与安装.md)。
+
 ## 前言：cc-switch 是什么？能做什么？
 
 如果你是第一次接触模型配置，可以把 **cc-switch** 理解成一个"模型切换面板" 🧭：
