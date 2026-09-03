@@ -1,5 +1,7 @@
 # Codex桌面客户端使用方案
 
+> 尚未安装 Codex Agent 桌面客户端？先看 [Codex Agent 下载与安装](Codex-Agent-下载与安装.md)。
+
 1. 下载Codex桌面版，未配置成功时打开见到如下登陆页：
 
    ![](https://wiki.tu-zi.com/api/files.get?sig=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ1cGxvYWRzLzA0MTA4NzY3LTk1YjgtNDYzMi05YWFmLTgwNzgwZjIwMmFkMi9lYjY2NTNkNC0wOTAyLTQxZmQtOGRmMC0yYWIyNGQ5NmQwYzAvaW1hZ2UucG5nIiwidHlwZSI6ImF0dGFjaG1lbnQiLCJpYXQiOjE3ODA0NTQ5NjEsImV4cCI6MTc4MDQ1ODU2MX0.5rKZwAvmWjAkn9_hD4XY-F1lx5CNGZDd65vLqQaVhw4 " =407x401")
